@@ -43,5 +43,12 @@ describe('Round', () => {
         expect(round.incorrectGuesses).to.be.an('array')
         expect(round.incorrectGuesses.length).to.equal(0)
     })
+    it('Should be able to determine if a guess is correct', () => {
+        
+       expect(round.takeTurn('sea otter')).to.equal('correct!')
+    })
+    it('Should be able to determine if a guess is incorrect', () => {
 
+        expect(round.takeTurn('spleen')).to.equal('incorrect!')
+    })
 })
