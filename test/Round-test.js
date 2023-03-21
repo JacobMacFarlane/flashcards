@@ -36,7 +36,7 @@ describe('Round', () => {
     })
     it('Should default to 0 turns', () => {
 
-        expect(round.deck).to.equal(0)
+        expect(round.turns).to.equal(0)
     })
     it('Should hold an empty array in incorrect guesses', () => {
 
