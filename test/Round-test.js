@@ -55,5 +55,10 @@ describe('Round', () => {
 
         expect(round.calculatePercentCorrect()).to.equal(50)
     })
-    
+    it('Should display a message featuring the users score at the end', () => {
+        round.takeTurn('sea otter')
+        round.takeTurn('spleen')
+
+        expect(round.endRound()).to.equal("** Round over! ** You answered 50% of the questions correctly!")
+    })
 })

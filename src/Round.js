@@ -28,6 +28,9 @@ class Round {
         let numCorrect = this.turns - this.incorrectGuesses.length
         return Math.round((numCorrect / this.turns) * 100)
     }
+    endRound() {
+        return `** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`
+    }
 }
 
 
