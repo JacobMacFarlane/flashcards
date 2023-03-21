@@ -25,4 +25,23 @@ describe('Round', () => {
         
         expect(round).to.be.an.instanceof(Round)
     })
+    it('Should be able to store the current deck', () => {
+
+        expect(round.deck.length).to.equal(3)
+        expect(round.deck).to.be.an('array')
+    })
+    it('Should be able to return the current card', () => {
+
+        expect(round.returnCurrentCard()).to.be.an('object')
+    })
+    it('Should default to 0 turns', () => {
+
+        expect(round.deck).to.equal(0)
+    })
+    it('Should hold an empty array in incorrect guesses', () => {
+
+        expect(round.incorrectGuesses).to.be.an('array')
+        expect(round.incorrectGuesses.length).to.equal(0)
+    })
+
 })
