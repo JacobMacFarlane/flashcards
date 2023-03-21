@@ -49,5 +49,11 @@ describe('Round', () => {
        expect(round.incorrectGuesses[0]).to.equal(14)
 
     })
+    it('Should be able to calculate the percent correct', () => {
+        round.takeTurn('sea otter')
+        round.takeTurn('spleen')
+
+        expect(round.calculatePercentCorrect()).to.equal(50)
+    })
     
 })
