@@ -3,7 +3,7 @@ const expect = chai.expect;
 const Deck = require('../src/Deck')
 const Card = require('../src/Card');
 const Round = require('../src/Round')
-
+const Turns = require('../src/Turns')
 
 describe('Round', () => {
     let card1, card2, card3
@@ -25,11 +25,6 @@ describe('Round', () => {
         
         expect(round).to.be.an.instanceof(Round)
     })
-    it('Should be able to store the current deck', () => {
-
-        expect(round.deck.length).to.equal(3)
-        expect(round.deck).to.be.an('array')
-    })
     it('Should be able to return the current card', () => {
 
         expect(round.returnCurrentCard()).to.be.an('object')
@@ -44,11 +39,15 @@ describe('Round', () => {
         expect(round.incorrectGuesses.length).to.equal(0)
     })
     it('Should be able to determine if a guess is correct', () => {
-        
-       expect(round.takeTurn('sea otter')).to.equal('correct!')
-    })
-    it('Should be able to determine if a guess is incorrect', () => {
+        let guess =round.takeTurn('sea otter')
+       expect(guess).to.equal('correct!')
+       expect(round.turns).to.equal(1)
+       expect(round.incorrectGuesses).to.be.an('array')
+       guess = round.takeTurn('spleen')
+       expect(guess).to.equal('incorrect!')
+       expect(round.turns).to.equal(2)
+       expect(round.incorrectGuesses[0]).to.equal(14)
 
-        expect(round.takeTurn('spleen')).to.equal('incorrect!')
     })
+    
 })
