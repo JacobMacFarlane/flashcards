@@ -20,10 +20,10 @@ describe('Game', () => {
         round = new Round(deck);
         game = new Game(round)
     })
-    it ('Should keep track of the currentRound', () => {
-        let startingRound = new Round(deck)
-
-        expect(game.currentRound).to.equal(round)
+    it ('Should keep track of the current Round and deck', () => {
+        game.start()
+        expect(game.currentRound).to.be.an.instanceof(Round)
 
     })
+    it ('Should keep track of the new deck')
 })
