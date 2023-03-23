@@ -19,10 +19,7 @@ class Turns {
         } else {
             return 'incorrect!'
         }
-    }
-
-
-        
+    }        
 }
 
 
