@@ -25,5 +25,5 @@ describe('Game', () => {
         expect(game.currentRound).to.be.an.instanceof(Round)
 
     })
-    it ('Should keep track of the new deck')
+    
 })
