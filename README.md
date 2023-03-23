@@ -1,9 +1,6 @@
 # Abstract 
 
-## For this project which is kicking of Mod 2 I created the logic that allowed the user
-## to practice flashcards within the command line interface, This was my first attempt at TDD
-## The project right now has about 30 flashcards which are multiple choice and the user will recieve
-## feedback based upon wether or not they provide the correct answer!
+## For this project which is kicking of Mod 2 I created the logic that allowed the user to practice flashcards within the command line interface, This was my first attempt at TDD. The project right now has about 30 flashcards which are multiple choice and the user will recieve feedback based upon wether or not they provide the correct answer!
 
 # Functionality
 ![Gif of Flashcards](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmQxMTBmNjE3NGVjZjdiNzBkZWJjZDU4YjMwZGE2MGExMWFhNzllZCZjdD1n/tIPLNcamBWVdd6YvRF/giphy.gif)
